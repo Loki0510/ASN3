@@ -21,7 +21,6 @@ st.sidebar.title("Navigation")
 page = st.sidebar.radio("Go to", [
     "Home",
     "Sentiment Analysis",
-    "General Insights",
     "Trend Analysis",
     "Interactive KPI Explorer"
 ])
@@ -98,32 +97,6 @@ elif page == "Sentiment Analysis":
         st.markdown("""The **Sentiment Distribution** and **Monthly Trends** for Firefox indicate **clear shifts** in sentiment over time.
         The **Pie Chart** indicates a well-balanced sentiment between positive, neutral, and negative reviews.
         """)
-
-# General Insights
-elif page == "General Insights":
-    general_page = st.sidebar.radio("General Insights for:",["Zoom ", "Webex ", "Firefox "])
-
-    if general_page == "Zoom":
-        st.title("Zoom General Insights")
-        st.image("output/figures/review_count_over_time.png", caption="Zoom Review Count Over Time", use_container_width=True)
-        st.image("output/figures/rating_distribution.png", caption="Zoom Rating Distribution", use_container_width=True)
-        st.image("output/figures/wordcloud_reviews.png", caption="Zoom Most Common Words in Reviews", use_container_width=True)
-        st.image("output/figures/top_emojis.png", caption="Zoom Top 20 Emojis", use_container_width=True)
-
-    elif general_page == "Webex" :
-        st.title("Webex General Insights")
-        st.image("output/figures/webex_review_count_over_time.png", caption="Webex Review Count Over Time", use_container_width=True)
-        st.image("output/figures/webex_rating_distribution.png", caption="Webex Rating Distribution", use_container_width=True)
-        st.image("output/figures/webex_word_cloud.png", caption="Webex Most Common Words in Reviews", use_container_width=True)
-        st.image("output/figures/webex_top_emojis.png", caption="Webex Top 20 Emojis", use_container_width=True)
-
-    elif general_page == "Firefox" :
-        st.title("Firefox General Insights")
-        st.image("output/figures/firefox_review_count_over_time.png", caption="Firefox Review Count Over Time", use_container_width=True)
-        st.image("output/figures/firefox_rating_distribution.png", caption="Firefox Rating Distribution", use_container_width=True)
-        st.image("output/figures/firefox_word_cloud.png", caption="Firefox Most Common Words in Reviews", use_container_width=True)
-        st.image("output/figures/firefox_top_emojis.png", caption="Firefox Top 20 Emojis", use_container_width=True)
-
 # Trend Analysis
 elif page == "Trend Analysis":
     st.title("📈 Trend Analysis Across Apps")
