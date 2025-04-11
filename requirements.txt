@@ -1,0 +1,9 @@
+pandas
+openpyxl
+emoji
+matplotlib
+seaborn
+streamlit
+plotly
+textblob
+nltk
